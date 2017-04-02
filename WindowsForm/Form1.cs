@@ -82,5 +82,10 @@ namespace WindowsForm
         {
             Clipboard.SetText(tBRand.Text);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("C:\\Program Files (x86)\\Total Commander\\TOTALCMD64.EXE");
+        }
     }
 }

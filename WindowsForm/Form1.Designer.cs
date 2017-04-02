@@ -40,22 +40,25 @@
             this.ButtonMinus = new System.Windows.Forms.Button();
             this.ButtonPlus = new System.Windows.Forms.Button();
             this.tabPageRand = new System.Windows.Forms.TabPage();
+            this.checkBoxNRepead = new System.Windows.Forms.CheckBox();
+            this.buttonCopy = new System.Windows.Forms.Button();
+            this.buttonClear = new System.Windows.Forms.Button();
+            this.tBRand = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonGo = new System.Windows.Forms.Button();
             this.lRand = new System.Windows.Forms.Label();
             this.valueMax = new System.Windows.Forms.NumericUpDown();
             this.valueMin = new System.Windows.Forms.NumericUpDown();
-            this.tBRand = new System.Windows.Forms.TextBox();
-            this.buttonClear = new System.Windows.Forms.Button();
-            this.buttonCopy = new System.Windows.Forms.Button();
-            this.checkBoxNRepead = new System.Windows.Forms.CheckBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.TabPageCount.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPageRand.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.valueMax)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.valueMin)).BeginInit();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -103,6 +106,7 @@
             // 
             this.TabPageCount.Controls.Add(this.tabPage1);
             this.TabPageCount.Controls.Add(this.tabPageRand);
+            this.TabPageCount.Controls.Add(this.tabPage2);
             this.TabPageCount.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TabPageCount.Location = new System.Drawing.Point(0, 24);
             this.TabPageCount.Name = "TabPageCount";
@@ -187,6 +191,47 @@
             this.tabPageRand.Text = "Random";
             this.tabPageRand.UseVisualStyleBackColor = true;
             // 
+            // checkBoxNRepead
+            // 
+            this.checkBoxNRepead.AutoSize = true;
+            this.checkBoxNRepead.Location = new System.Drawing.Point(23, 27);
+            this.checkBoxNRepead.Name = "checkBoxNRepead";
+            this.checkBoxNRepead.Size = new System.Drawing.Size(76, 17);
+            this.checkBoxNRepead.TabIndex = 9;
+            this.checkBoxNRepead.Text = "No repead";
+            this.checkBoxNRepead.UseVisualStyleBackColor = true;
+            // 
+            // buttonCopy
+            // 
+            this.buttonCopy.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonCopy.Location = new System.Drawing.Point(45, 158);
+            this.buttonCopy.Name = "buttonCopy";
+            this.buttonCopy.Size = new System.Drawing.Size(102, 38);
+            this.buttonCopy.TabIndex = 8;
+            this.buttonCopy.Text = "Copy";
+            this.buttonCopy.UseVisualStyleBackColor = true;
+            this.buttonCopy.Click += new System.EventHandler(this.buttonCopy_Click);
+            // 
+            // buttonClear
+            // 
+            this.buttonClear.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonClear.Location = new System.Drawing.Point(187, 158);
+            this.buttonClear.Name = "buttonClear";
+            this.buttonClear.Size = new System.Drawing.Size(103, 38);
+            this.buttonClear.TabIndex = 7;
+            this.buttonClear.Text = "Clear";
+            this.buttonClear.UseVisualStyleBackColor = true;
+            this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
+            // 
+            // tBRand
+            // 
+            this.tBRand.Location = new System.Drawing.Point(401, 21);
+            this.tBRand.Multiline = true;
+            this.tBRand.Name = "tBRand";
+            this.tBRand.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tBRand.Size = new System.Drawing.Size(72, 112);
+            this.tBRand.TabIndex = 6;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -253,46 +298,25 @@
             this.valueMin.Size = new System.Drawing.Size(88, 20);
             this.valueMin.TabIndex = 0;
             // 
-            // tBRand
+            // tabPage2
             // 
-            this.tBRand.Location = new System.Drawing.Point(401, 21);
-            this.tBRand.Multiline = true;
-            this.tBRand.Name = "tBRand";
-            this.tBRand.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tBRand.Size = new System.Drawing.Size(72, 112);
-            this.tBRand.TabIndex = 6;
+            this.tabPage2.Controls.Add(this.button1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Size = new System.Drawing.Size(496, 225);
+            this.tabPage2.TabIndex = 2;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // buttonClear
+            // button1
             // 
-            this.buttonClear.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonClear.Location = new System.Drawing.Point(187, 158);
-            this.buttonClear.Name = "buttonClear";
-            this.buttonClear.Size = new System.Drawing.Size(103, 38);
-            this.buttonClear.TabIndex = 7;
-            this.buttonClear.Text = "Clear";
-            this.buttonClear.UseVisualStyleBackColor = true;
-            this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
-            // 
-            // buttonCopy
-            // 
-            this.buttonCopy.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonCopy.Location = new System.Drawing.Point(45, 158);
-            this.buttonCopy.Name = "buttonCopy";
-            this.buttonCopy.Size = new System.Drawing.Size(102, 38);
-            this.buttonCopy.TabIndex = 8;
-            this.buttonCopy.Text = "Copy";
-            this.buttonCopy.UseVisualStyleBackColor = true;
-            this.buttonCopy.Click += new System.EventHandler(this.buttonCopy_Click);
-            // 
-            // checkBoxNRepead
-            // 
-            this.checkBoxNRepead.AutoSize = true;
-            this.checkBoxNRepead.Location = new System.Drawing.Point(23, 27);
-            this.checkBoxNRepead.Name = "checkBoxNRepead";
-            this.checkBoxNRepead.Size = new System.Drawing.Size(76, 17);
-            this.checkBoxNRepead.TabIndex = 9;
-            this.checkBoxNRepead.Text = "No repead";
-            this.checkBoxNRepead.UseVisualStyleBackColor = true;
+            this.button1.Location = new System.Drawing.Point(133, 78);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(165, 46);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // MainForm
             // 
@@ -314,6 +338,7 @@
             this.tabPageRand.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.valueMax)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.valueMin)).EndInit();
+            this.tabPage2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -343,6 +368,8 @@
         private System.Windows.Forms.Button buttonClear;
         private System.Windows.Forms.Button buttonCopy;
         private System.Windows.Forms.CheckBox checkBoxNRepead;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.Button button1;
     }
 }
 
