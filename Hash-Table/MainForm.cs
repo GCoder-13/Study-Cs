@@ -406,7 +406,15 @@ namespace Hash_Table
                 this.textBoxAuthor.Text = hash_table.ElementAt(indexHight).Value.Values.ElementAt(indexWidth).author;
                 this.textBoxCount.Text = hash_table.ElementAt(indexHight).Value.Values.ElementAt(indexWidth).count.ToString();
                 this.MenuDelete.Visible = true;
-                if(hash_table.Count > 1)
+                int count = 0;
+                foreach (var hight in hash_table)
+                {
+                    foreach (var width in hight.Value)
+                    {
+                        count++;
+                    }
+                }
+                if (count > 1)
                 {
                     this.btnNext.Enabled = true;
                 }
@@ -497,6 +505,27 @@ namespace Hash_Table
             this.textBoxAuthor.Text = hash_table.ElementAt(0).Value.Values.ElementAt(0).author;
             this.textBoxCount.Text = hash_table.ElementAt(0).Value.Values.ElementAt(0).count.ToString();
             this.btnBack.Enabled = false;
+        }
+
+        private void MenuClear_Click(object sender, EventArgs e)
+        {
+            if (hash_table.Count == 0)
+            {
+                MessageBox.Show("Хеш-таблиця - пуста.",
+                    "Інформація",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+                return;
+            }
+            foreach (var hight in hash_table)
+            {
+                hight.Value.Clear();
+            }
+            hash_table.Clear();
+            MessageBox.Show("Хеш-таблиця очищена.",
+                    "Інформація",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
         }
     }
 }

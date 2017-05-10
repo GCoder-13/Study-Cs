@@ -37,6 +37,7 @@
             this.MenuDelete = new System.Windows.Forms.ToolStripMenuItem();
             this.btnClose = new System.Windows.Forms.Button();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this.MenuClear = new System.Windows.Forms.ToolStripMenuItem();
             this.MainMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,6 +58,7 @@
             this.MenuView,
             this.MenuFind,
             this.MenuRecord,
+            this.MenuClear,
             this.MenuDelete});
             this.MainMenu.Location = new System.Drawing.Point(0, 0);
             this.MainMenu.Name = "MainMenu";
@@ -111,6 +113,13 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // MenuClear
+            // 
+            this.MenuClear.Name = "MenuClear";
+            this.MenuClear.Size = new System.Drawing.Size(72, 20);
+            this.MenuClear.Text = "Очистити";
+            this.MenuClear.Click += new System.EventHandler(this.MenuClear_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -152,6 +161,7 @@
         private System.Windows.Forms.Button btnFind;
         private System.Windows.Forms.SaveFileDialog saveFileDialog;
         private System.Windows.Forms.ToolStripMenuItem MenuDelete;
+        private System.Windows.Forms.ToolStripMenuItem MenuClear;
     }
 }
 
