@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Help", "Help\Help.csproj", "{F2FB4B49-8968-487C-8D60-FFAA2431FF42}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsForm", "WindowsForm\WindowsForm.csproj", "{FDCE36AE-F44B-410C-8B03-888A81D39EEE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hash-Table", "Hash-Table\Hash-Table.csproj", "{0C1CA916-964A-43E1-B4E6-7099C5BB43EE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BiQuadratic equation", "BiQuadratic equation\BiQuadratic equation.csproj", "{ABADA6F1-2F29-4133-B2C9-C36AC7A4D592}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Draw", "Draw\Draw.csproj", "{96AADF10-3B28-4161-84AE-D3AC8FBA191D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F2FB4B49-8968-487C-8D60-FFAA2431FF42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F2FB4B49-8968-487C-8D60-FFAA2431FF42}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F2FB4B49-8968-487C-8D60-FFAA2431FF42}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F2FB4B49-8968-487C-8D60-FFAA2431FF42}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FDCE36AE-F44B-410C-8B03-888A81D39EEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FDCE36AE-F44B-410C-8B03-888A81D39EEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDCE36AE-F44B-410C-8B03-888A81D39EEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{ABADA6F1-2F29-4133-B2C9-C36AC7A4D592}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ABADA6F1-2F29-4133-B2C9-C36AC7A4D592}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ABADA6F1-2F29-4133-B2C9-C36AC7A4D592}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96AADF10-3B28-4161-84AE-D3AC8FBA191D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96AADF10-3B28-4161-84AE-D3AC8FBA191D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96AADF10-3B28-4161-84AE-D3AC8FBA191D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96AADF10-3B28-4161-84AE-D3AC8FBA191D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
