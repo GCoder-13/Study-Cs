@@ -48,7 +48,7 @@ namespace BiQuadratic_equation
             double c = Double.Parse(textBoxC.Text);
 
             double D = b * b - 4 * a * c;
-            if(D == 0)
+            if(D < 0)
             {
                 MessageBox.Show("Рівняння не має розв\'язку",
                     "Відповідь",
@@ -80,14 +80,14 @@ namespace BiQuadratic_equation
                 message += ", 0";
             }
 
-            if (!sw)
+            if (sw)
             {
-                MessageBox.Show(message + "коренів не має",
+                MessageBox.Show(message,
                 "Відповідь",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
             }
-            else MessageBox.Show(message,
+            else MessageBox.Show(message + "коренів не має",
                 "Відповідь",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
